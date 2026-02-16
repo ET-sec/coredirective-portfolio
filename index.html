@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>◉ COREDIRECTIVE — Security Solutions Architecture</title>
+<title>◉ COREDIRECTIVE // Security Solutions Architecture</title>
 <meta name="description" content="CoreDirective. Security solutions architecture, infrastructure automation, and technical auditing. Founded by Emmanuel Tigoue. DoD 8140 compliant. Multi-certified. Production-tested.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
@@ -109,6 +109,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,255,65,0.1); }
 /* BUTTON HOVER GLOW */
 .btn-primary:hover { box-shadow: 0 0 20px rgba(0,255,65,0.3); }
 .btn-outline:hover { box-shadow: 0 0 20px rgba(0,212,255,0.3); }
+
+.gmail-link:hover { color: var(--green); }
 
 /* Section Headers */
 .section-header { margin-bottom: 48px; }
@@ -233,16 +235,16 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
 <section class="hero">
   <canvas id="matrix-bg"></canvas>
   <div class="container" style="position:relative;z-index:1;">
-    <div class="hero-badge">[ Public ] — Operations Hub</div>
+    <div class="hero-badge">[ Public ] // Operations Hub</div>
     <h1><span class="icon">◉</span> <span class="glitch-hover">EMMANUEL TIGOUE</span></h1>
     <div class="tagline" id="typed-tagline"></div>
     <div class="sub-tagline">DoD 8140 Advanced Tier Compliant</div>
     <p class="intro">I engineer defensive systems and automate security operations to reduce organizational risk. Architect of the Cyber-Squire OS.</p>
     <div class="hero-buttons">
-      <a href="#solutions" class="btn btn-primary">Book a Consult</a>
+      <a href="#contact" class="btn btn-primary">Book a Consult</a>
       <a href="https://github.com/ETcodin" target="_blank" class="btn btn-outline">Review Infrastructure</a>
     </div>
-    <div class="status-line"><span class="pulse">◉</span> STATUS: SYSTEMS ONLINE — COREDIRECTIVE ACTIVE</div>
+    <div class="status-line"><span class="pulse">◉</span> STATUS: SYSTEMS ONLINE // COREDIRECTIVE ACTIVE</div>
   </div>
 </section>
 
@@ -258,7 +260,7 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
       <div>
         <div class="callsign">SECURITY SOLUTIONS ARCHITECT: EMMANUEL TIGOUE // ATLANTA</div>
         <div class="about-text">
-          <p>I engineer defensive systems and automate security operations to reduce organizational risk. My technical foundation in cybersecurity operations and business economics allows me to align advanced security architecture with corporate financial objectives.</p>
+          <p>My technical foundation in cybersecurity operations and business economics allows me to align advanced security architecture with corporate financial objectives. I build automated defensive systems, conduct infrastructure audits, and deploy AI-driven security pipelines.</p>
           <p>CoreDirective functions as an intelligence hub. I publish tactical playbooks, infrastructure builds, and firsthand threat intelligence because proof outranks promises.</p>
           <p>The Mission: Provide the technical frameworks and intelligence required to secure high-level careers in cybersecurity. No gatekeepers. No excuses.</p>
         </div>
@@ -270,7 +272,7 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
           <div class="stat"><div class="num">✓</div><div class="lbl">NIST 800-53 Ready</div></div>
           <div class="stat"><div class="num">3+</div><div class="lbl">Production Infrastructure Builds</div></div>
         </div>
-        <div class="hud" style="margin-top:24px;">
+        <div class="hud hud-animate" style="margin-top:24px;">
           <span class="bl"></span><span class="br"></span>
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--light);margin-bottom:8px;">MISSION STATUS [ OPERATIONAL ]</div>
           <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--cyan);line-height:1.7;">
@@ -578,6 +580,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     e.preventDefault();
     const target = document.querySelector(a.getAttribute('href'));
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.querySelector('.nav-links').classList.remove('open');
   });
 });
 
@@ -614,7 +617,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   }
   resize();
   window.addEventListener('resize', resize);
+  let running = true;
+  const heroEl = canvas.parentElement;
+  const matrixObs = new IntersectionObserver(entries => {
+    running = entries[0].isIntersecting;
+    if (running) requestAnimationFrame(draw);
+  }, { threshold: 0 });
+  matrixObs.observe(heroEl);
   function draw() {
+    if (!running) return;
     ctx.fillStyle = 'rgba(10,10,10,0.15)';
     ctx.fillRect(0, 0, w, h);
     ctx.fillStyle = '#00FF41';
