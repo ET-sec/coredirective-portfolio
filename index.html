@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>◉ COREDIRECTIVE — Cybersecurity. AI. The Climb.</title>
-<meta name="description" content="CoreDirective is a cybersecurity and AI operation run by Emmanuel Tigoue. Multi-certified. Building in public. Your clearance starts here.">
+<title>◉ COREDIRECTIVE — Security Solutions Architecture</title>
+<meta name="description" content="CoreDirective. Security solutions architecture, infrastructure automation, and technical auditing. Founded by Emmanuel Tigoue. DoD 8140 compliant. Multi-certified. Production-tested.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
@@ -36,7 +36,8 @@ section { padding: 80px 0; border-bottom: 1px solid var(--mid); }
 .hero-badge { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--light); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; }
 .hero h1 { font-size: clamp(36px, 7vw, 72px); font-weight: 800; letter-spacing: 2px; margin-bottom: 12px; }
 .hero h1 .icon { color: var(--green); }
-.hero .tagline { font-family: 'JetBrains Mono', monospace; font-size: clamp(14px, 2.5vw, 20px); color: var(--green); margin-bottom: 24px; letter-spacing: 2px; }
+.hero .tagline { font-family: 'JetBrains Mono', monospace; font-size: clamp(14px, 2.5vw, 20px); color: var(--green); margin-bottom: 8px; letter-spacing: 2px; }
+.hero .sub-tagline { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--gold); margin-bottom: 24px; letter-spacing: 1px; }
 .hero .intro { max-width: 600px; margin: 0 auto 32px; color: var(--light); font-size: 16px; line-height: 1.7; }
 .btn { display: inline-block; padding: 14px 28px; font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border: 1px solid; cursor: pointer; transition: all 0.2s; text-decoration: none !important; }
 .btn-primary { background: var(--green); color: var(--void); border-color: var(--green); }
@@ -65,7 +66,6 @@ section { padding: 80px 0; border-bottom: 1px solid var(--mid); }
 
 /* CERTS */
 .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-.cert-card { position: relative; }
 .cert-card .hud { padding: 24px; transition: border-color 0.3s, box-shadow 0.3s; }
 .cert-card .hud:hover { border-color: var(--green); box-shadow: 0 0 12px rgba(0,255,65,0.15); }
 .cert-badge { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; padding: 3px 8px; border: 1px solid; display: inline-block; margin-bottom: 12px; }
@@ -75,7 +75,7 @@ section { padding: 80px 0; border-bottom: 1px solid var(--mid); }
 .cert-card .cert-note { font-style: italic; color: var(--green); font-size: 13px; margin-top: 12px; line-height: 1.5; }
 .cert-card .doc-id { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #555; margin-top: 12px; }
 
-/* SERVICES */
+/* SERVICES/SOLUTIONS */
 .service-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
 .service-card .hud { height: 100%; display: flex; flex-direction: column; }
 .service-tier { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
@@ -159,7 +159,7 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#certs">Certs</a>
-      <a href="#services">Services</a>
+      <a href="#solutions">Solutions</a>
       <a href="#products">Products</a>
       <a href="#climb">The Climb</a>
       <a href="#shows">Live</a>
@@ -171,13 +171,14 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
 <!-- HERO -->
 <section class="hero">
   <div class="container" style="position:relative;z-index:1;">
-    <div class="hero-badge">[ PUBLIC ] — Operations Hub</div>
+    <div class="hero-badge">[ Public ] — Operations Hub</div>
     <h1><span class="icon">◉</span> COREDIRECTIVE</h1>
-    <div class="tagline">Cybersecurity. AI. The Climb.</div>
-    <p class="intro">I'm Emmanuel Tigoue. Multi-certified cybersecurity professional, building in public. I document everything, share real intel, and help people break into this field without gatekeepers, prerequisites, or excuses.</p>
+    <div class="tagline">Cybersecurity Operations &bull; Infrastructure Automation &bull; Technical Auditing</div>
+    <div class="sub-tagline">DoD 8140 Compliant (Advanced Tier)</div>
+    <p class="intro">I architect security solutions, automate defensive infrastructure, and conduct technical audits for organizations that can't afford gaps. Multi-certified. Production-tested.</p>
     <div class="hero-buttons">
-      <a href="#services" class="btn btn-primary">Book a Consult</a>
-      <a href="#certs" class="btn btn-outline">View Certifications</a>
+      <a href="#contact" class="btn btn-primary">Book a Consult</a>
+      <a href="#solutions" class="btn btn-outline">View Solutions</a>
     </div>
     <div class="status-line"><span class="pulse">◉</span> SYSTEMS ONLINE — COREDIRECTIVE ACTIVE</div>
   </div>
@@ -187,31 +188,30 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
 <section id="about">
   <div class="container">
     <div class="section-header">
-      <div class="label">// Operative Dossier</div>
-      <h2>About ET</h2>
+      <div class="label">// About CoreDirective</div>
+      <h2>About CoreDirective</h2>
       <div class="line"></div>
     </div>
     <div class="about-grid">
       <div>
-        <div class="callsign">FOUNDER: EMMANUEL TIGOUE // CLEARANCE LEVEL: MAX</div>
+        <div class="callsign">FOUNDER: EMMANUEL TIGOUE // SECURITY SOLUTIONS ARCHITECT</div>
         <div class="about-text">
-          <p>Emmanuel Tigoue. Atlanta. Multi-certified cybersecurity professional studying CIS Cybersecurity + Business Economics at Georgia State University. I build security systems, automate operations, and teach what I learn.</p>
-          <p>CoreDirective is where I publish threat intelligence, study systems, and the real playbook for breaking into cybersecurity. Everything here comes from firsthand experience. I document the climb in real time because proof beats promises.</p>
-          <p>The mission: give every person the tools and intel to secure their career in this field. No gatekeepers. No prerequisites.</p>
+          <p>CoreDirective bridges technical security and business risk. I build automated defensive systems, conduct infrastructure audits, and deploy AI-driven security pipelines. The work spans network architecture, cloud security, compliance alignment, and operational automation.</p>
+          <p>Every engagement is grounded in production experience and validated by certifications at the advanced tier. If your infrastructure has gaps, I find them. If your operations need automation, I build it.</p>
         </div>
       </div>
       <div>
         <div class="about-stats">
-          <div class="stat"><div class="num">✓</div><div class="lbl">Multi-Certified</div></div>
-          <div class="stat"><div class="num">$0</div><div class="lbl">Revenue (Building)</div></div>
-          <div class="stat"><div class="num">18+</div><div class="lbl">Automated Services</div></div>
-          <div class="stat"><div class="num">∞</div><div class="lbl">Quit Attempts: 0</div></div>
+          <div class="stat"><div class="num">18+</div><div class="lbl">Automated Security Pipelines</div></div>
+          <div class="stat"><div class="num">✓</div><div class="lbl">DoD 8140 Compliant</div></div>
+          <div class="stat"><div class="num">✓</div><div class="lbl">NIST 800-53 Ready</div></div>
+          <div class="stat"><div class="num">3+</div><div class="lbl">Production Infrastructure Builds</div></div>
         </div>
         <div class="hud" style="margin-top:24px;">
           <span class="bl"></span><span class="br"></span>
           <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--light);margin-bottom:8px;">MISSION STATUS:</div>
           <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--cyan);line-height:1.7;">
-            Multi-certified. DoD 8570 compliant. Building production infrastructure while most people are still studying for their first cert. Status: <span style="color:var(--green);">ACTIVE</span>.
+            DoD 8140 Advanced Tier compliance verified. Production automation infrastructure operational. All systems deployed and monitored. Status: <span style="color:var(--green);">ACTIVE</span>.
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
         <h3>CompTIA CASP+</h3>
         <div class="cert-meta">Advanced Security Practitioner</div>
         <div class="cert-meta">Clearance Level: Elite</div>
-        <div class="cert-note">"The hardest one. Proved I belong at the advanced table."</div>
+        <div class="cert-note">"Advanced tier. Architecture-level security validation."</div>
         <div class="doc-id">CD-CERT-001</div>
       </div></div>
 
@@ -248,10 +248,10 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
 
       <div class="cert-card"><div class="hud"><span class="bl"></span><span class="br"></span>
         <span class="cert-badge badge-cleared">◉ CLEARED</span>
-        <h3>ISC² SSCP</h3>
+        <h3>ISC2 SSCP</h3>
         <div class="cert-meta">Systems Security Certified Practitioner</div>
         <div class="cert-meta">Clearance Level: Advanced</div>
-        <div class="cert-note">"ISC² validates you different. This one opens doors."</div>
+        <div class="cert-note">"ISC2 validated. Operational security at the practitioner level."</div>
         <div class="doc-id">CD-CERT-003</div>
       </div></div>
 
@@ -260,8 +260,8 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
         <h3>CompTIA Security+</h3>
         <div class="cert-meta">Security Fundamentals</div>
         <div class="cert-meta">Clearance Level: Intermediate</div>
-        <div class="cert-note">"Your entry ticket. Don't overthink it. Just pass it."</div>
-        <div class="doc-id">CD-CERT-005</div>
+        <div class="cert-note">"The baseline. DoD 8140 foundation."</div>
+        <div class="doc-id">CD-CERT-004</div>
       </div></div>
 
       <div class="cert-card"><div class="hud"><span class="bl"></span><span class="br"></span>
@@ -269,16 +269,16 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
         <h3>CompTIA Network+</h3>
         <div class="cert-meta">Networking Fundamentals</div>
         <div class="cert-meta">Clearance Level: Foundation</div>
-        <div class="cert-note">"Took two tries. I don't hide that. The lesson was worth the retake."</div>
-        <div class="doc-id">CD-CERT-006</div>
+        <div class="cert-note">"Infrastructure starts here."</div>
+        <div class="doc-id">CD-CERT-005</div>
       </div></div>
 
       <div class="cert-card"><div class="hud"><span class="bl"></span><span class="br"></span>
         <span class="cert-badge badge-cleared">◉ CLEARED</span>
-        <h3>ISC² CC</h3>
+        <h3>ISC2 CC</h3>
         <div class="cert-meta">Certified in Cybersecurity</div>
         <div class="cert-meta">Clearance Level: Foundation</div>
-        <div class="cert-note">"Free exam, real credential. No excuse not to get this."</div>
+        <div class="cert-note">"ISC2 entry point. Real credential, zero cost."</div>
         <div class="doc-id">CD-CERT-006</div>
       </div></div>
 
@@ -294,66 +294,65 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services">
+<!-- SOLUTIONS -->
+<section id="solutions">
   <div class="container">
     <div class="section-header">
-      <div class="label">// Operations</div>
-      <h2>Services</h2>
+      <div class="label">// Solutions</div>
+      <h2>Solutions</h2>
       <div class="line"></div>
     </div>
     <div class="service-grid">
       <div class="service-card"><div class="hud"><span class="bl"></span><span class="br"></span>
-        <div class="service-tier">Career Intel</div>
-        <h3>Clearance Check</h3>
-        <div class="service-desc">Get your cybersecurity career path mapped in a focused 1-on-1 session.</div>
-        <ul class="service-list">
-          <li>30-min video call</li>
-          <li>Custom cert roadmap</li>
-          <li>Actionable next steps</li>
-          <li>Study templates included</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary btn-sm">Book a Call</a>
-      </div></div>
-
-      <div class="service-card"><div class="hud"><span class="bl"></span><span class="br"></span>
-        <div class="service-tier">Strategy</div>
-        <h3>Mission Planning</h3>
-        <div class="service-desc">Full cert planning and content strategy session. Built around your goals, your timeline, your situation.</div>
-        <ul class="service-list">
-          <li>90-min deep dive</li>
-          <li>Cert roadmap + study plan</li>
-          <li>Content strategy framework</li>
-          <li>Study templates included</li>
-          <li>2 weeks email follow-up</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary btn-sm">Book a Call</a>
-      </div></div>
-
-      <div class="service-card"><div class="hud"><span class="bl"></span><span class="br"></span>
         <div class="service-tier">Security</div>
-        <h3>Security Audit</h3>
-        <div class="service-desc">I find what's wrong before someone else does. Full security assessment for your business.</div>
+        <h3>Infrastructure Audit</h3>
+        <div class="service-desc">Identifying systemic risk, compliance gaps, and attack surface exposure. Full assessment aligned to DoD 8140 and NIST frameworks.</div>
         <ul class="service-list">
           <li>Full security assessment</li>
-          <li>Network, cloud, email, access review</li>
-          <li>Written report with priorities</li>
-          <li>Walkthrough call included</li>
+          <li>Network, cloud, and identity review</li>
+          <li>Written report with remediation priorities</li>
+          <li>Executive walkthrough</li>
         </ul>
         <a href="#contact" class="btn btn-outline btn-sm">Request Quote</a>
       </div></div>
 
       <div class="service-card"><div class="hud"><span class="bl"></span><span class="br"></span>
-        <div class="service-tier">Automation</div>
-        <h3>AI Automation Setup</h3>
-        <div class="service-desc">I build the system. You push the button. Scale-dependent pricing.</div>
+        <div class="service-tier">Engineering</div>
+        <h3>Automation Architecture</h3>
+        <div class="service-desc">Engineering autonomous security pipelines that eliminate manual overhead and reduce response time.</div>
         <ul class="service-list">
-          <li>Custom n8n workflow build</li>
-          <li>Built, tested, documented</li>
-          <li>Training call included</li>
-          <li>Use cases: email, social, data, alerts</li>
+          <li>Custom n8n/AI workflow builds</li>
+          <li>Security automation design</li>
+          <li>Monitoring and alerting systems</li>
+          <li>Full documentation + training</li>
         </ul>
         <a href="#contact" class="btn btn-outline btn-sm">Request Quote</a>
+      </div></div>
+
+      <div class="service-card"><div class="hud"><span class="bl"></span><span class="br"></span>
+        <div class="service-tier">Consulting</div>
+        <h3>Strategic Advisory</h3>
+        <div class="service-desc">Mapping technical roadmaps for security operations maturity. Cert planning, career architecture, compliance strategy.</div>
+        <ul class="service-list">
+          <li>1-on-1 strategy session</li>
+          <li>Cert roadmap + study systems included</li>
+          <li>Compliance gap analysis</li>
+          <li>Follow-up support</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-sm">Book a Call</a>
+      </div></div>
+
+      <div class="service-card"><div class="hud"><span class="bl"></span><span class="br"></span>
+        <div class="service-tier">Intelligence</div>
+        <h3>Technical Documentation</h3>
+        <div class="service-desc">Production-grade study systems, operational templates, and security frameworks. Built from real certification campaigns.</div>
+        <ul class="service-list">
+          <li>Notion-based study systems</li>
+          <li>Structured exam prep frameworks</li>
+          <li>Automation templates</li>
+          <li>Continuously updated</li>
+        </ul>
+        <a href="#products" class="btn btn-outline btn-sm">View Products</a>
       </div></div>
     </div>
   </div>
@@ -370,21 +369,21 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
     <div class="product-grid">
       <div class="product-card"><div class="hud"><span class="bl"></span><span class="br"></span>
         <h3>CCNA 200-301 Cyber-Squire OS</h3>
-        <p>The Notion study system I used to pass CCNA. Structured, repeatable, yours.</p>
+        <p>Production-grade Notion study system. The exact framework used to clear CCNA 200-301.</p>
         <div class="product-price">$39.99</div>
         <a href="https://gum.co/u/xetdgbo9?utm_source=portfolio&utm_medium=website" class="btn btn-primary btn-sm" target="_blank">Get It</a>
       </div></div>
 
       <div class="product-card"><div class="hud"><span class="bl"></span><span class="br"></span>
         <h3>Security+ 701 Cyber-Squire OS</h3>
-        <p>Security+ 701 study system. Same framework, built for this exam.</p>
+        <p>Production-grade Notion study system. The exact framework used to clear Security+ 701.</p>
         <div class="product-price">$29.99</div>
         <a href="https://gum.co/u/46x2ujvh?utm_source=portfolio&utm_medium=website" class="btn btn-primary btn-sm" target="_blank">Get It</a>
       </div></div>
 
       <div class="product-card"><div class="hud"><span class="bl"></span><span class="br"></span>
         <h3>Network+ 009 Cyber-Squire OS</h3>
-        <p>Network+ 009 study system. Free because everyone needs a starting point.</p>
+        <p>Production-grade Notion study system for Network+ 009. Free because everyone needs a starting point.</p>
         <div class="product-price free-tag">FREE</div>
         <a href="https://gum.co/u/a88bahum?utm_source=portfolio&utm_medium=website" class="btn btn-outline btn-sm" target="_blank">Download</a>
       </div></div>
@@ -396,30 +395,29 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
 <section id="climb">
   <div class="container">
     <div class="section-header">
-      <div class="label">// Revenue Tracker</div>
+      <div class="label">// Operational Log</div>
       <h2>The Climb</h2>
       <div class="line"></div>
     </div>
     <div class="hud" style="max-width:700px;">
       <span class="bl"></span><span class="br"></span>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--white);margin-bottom:16px;">REVENUE TRACKER</div>
-      <div class="progress-bar" id="revenueBar"></div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--white);margin-bottom:16px;">DEPLOYMENT TRACKER</div>
+      <div class="progress-bar" id="deployBar"></div>
       <div class="progress-stats">
-        <span style="color:var(--green);">$0 EARNED</span>
+        <span style="color:var(--green);">0 SYSTEMS DEPLOYED</span>
         <span style="color:var(--green);">ACTIVE</span>
       </div>
-      <p style="color:var(--light);font-size:14px;margin-top:16px;line-height:1.7;">Building from zero, documented in real time. Every dollar earned through services, products, and the grind gets tracked here. This isn't motivational content. It's a public ledger.</p>
+      <p style="color:var(--light);font-size:14px;margin-top:16px;line-height:1.7;">Systems deployed. Solutions shipped. Hours automated. Tracked in real time.</p>
     </div>
 
     <div style="margin-top:48px;">
-      <h3 style="font-size:20px;font-weight:700;margin-bottom:16px;">Weekly Content Schedule</h3>
+      <h3 style="font-size:20px;font-weight:700;margin-bottom:16px;">Content Schedule</h3>
       <div class="schedule-grid">
-        <div class="schedule-item"><div class="day">Mon-Sat</div><div class="output">3-5 TikToks + Shorts daily</div></div>
+        <div class="schedule-item"><div class="day">Daily</div><div class="output">Tactical Breakdowns + Technical Shorts</div></div>
         <div class="schedule-item"><div class="day">Tuesday</div><div class="output">Threat Brief LIVE, 8 PM ET</div></div>
-        <div class="schedule-item"><div class="day">Thursday</div><div class="output">The Climb LIVE, 8 PM ET</div></div>
+        <div class="schedule-item"><div class="day">Thursday</div><div class="output">The Build LIVE, 8 PM ET</div></div>
         <div class="schedule-item"><div class="day">Saturday</div><div class="output">Open Channel LIVE, 12 PM ET</div></div>
-        <div class="schedule-item"><div class="day">Weekly</div><div class="output">1 YouTube long-form briefing</div></div>
-        <div class="schedule-item"><div class="day">Sunday</div><div class="output">Rest. Even operatives recharge.</div></div>
+        <div class="schedule-item"><div class="day">Weekly</div><div class="output">1 YouTube Technical Briefing</div></div>
       </div>
     </div>
   </div>
@@ -438,15 +436,15 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
         <div class="show-day">Every Tuesday</div>
         <h3>Threat Brief LIVE</h3>
         <div class="show-time">8:00 PM ET, 60 min</div>
-        <p>Real-time cybersecurity news, threat analysis, and tactical breakdowns. The week's biggest security events, decoded live. Bring questions.</p>
+        <p>Weekly threat intelligence analysis. Real-time breakdown of the latest vulnerabilities, exploits, and compliance changes affecting security operations.</p>
         <div class="show-platform">MULTISTREAM: TikTok + YouTube</div>
       </div></div>
 
       <div class="show-card"><div class="hud" style="border-top-color:var(--gold);"><span class="bl"></span><span class="br"></span>
         <div class="show-day">Every Thursday</div>
-        <h3>The Climb</h3>
+        <h3>The Build LIVE</h3>
         <div class="show-time">8:00 PM ET, 75 min</div>
-        <p>The podcast. The journey. Cert progress, revenue updates, career moves, and real talk about building from nothing. No filter. Also available as a podcast.</p>
+        <p>Live engineering sessions. Building security automation pipelines, n8n workflows, and infrastructure tools in real time.</p>
         <div class="show-platform">MULTISTREAM: TikTok + YouTube</div>
       </div></div>
 
@@ -454,7 +452,7 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
         <div class="show-day">Every Saturday</div>
         <h3>Open Channel</h3>
         <div class="show-time">12:00 PM ET, 90 min</div>
-        <p>Casual AMA. Career questions, cert advice, tech talk, whatever's on your mind. The most relaxed briefing of the week. Pull up.</p>
+        <p>Open Q&A. Career strategy, cert advice, technical deep dives, industry talk. The most accessible briefing of the week.</p>
         <div class="show-platform">MULTISTREAM: TikTok + YouTube</div>
       </div></div>
     </div>
@@ -469,7 +467,7 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
       <h2>Connect</h2>
       <div class="line"></div>
     </div>
-    <p style="color:var(--light);max-width:500px;margin-bottom:8px;">Follow the operation. Book a session. Whatever your next move is, make it.</p>
+    <p style="color:var(--light);max-width:500px;margin-bottom:8px;">Ready to talk security, automation, or strategy. Pick a channel.</p>
     <div class="contact-links">
       <a href="https://www.tiktok.com/@coredirective.official?utm_source=portfolio&utm_medium=website" target="_blank" class="contact-link">▶ TikTok</a>
       <a href="https://www.youtube.com/@coredirective.official?utm_source=portfolio&utm_medium=website" target="_blank" class="contact-link">▶ YouTube</a>
@@ -480,21 +478,20 @@ nav .nav-links a:hover { color: var(--green); text-decoration: none; }
     </div>
     <div class="contact-email">support@tigouetheory.com</div>
     <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--light);margin-top:8px;">emmanueltigoue@gmail.com</div>
-    <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#555;margin-top:8px;">Your clearance starts here.</div>
   </div>
 </section>
 
 <footer>
   <div class="container">
     <div class="logo"><span style="color:var(--green);">◉</span> COREDIRECTIVE</div>
-    <div class="copy" style="font-family:'JetBrains Mono',monospace;">COREDIRECTIVE // 2026 — No gatekeepers. No prerequisites. No excuses.</div>
+    <div class="copy" style="font-family:'JetBrains Mono',monospace;">COREDIRECTIVE // 2026</div>
   </div>
 </footer>
 
 <script>
-// Build revenue progress bar (20 segments)
-const bar = document.getElementById('revenueBar');
-const filled = 0; // Update this as revenue grows: each block = 5%
+// Build deployment progress bar (20 segments)
+const bar = document.getElementById('deployBar');
+const filled = 0; // Update as systems are deployed: each block = 1 deployment
 for (let i = 0; i < 20; i++) {
   const block = document.createElement('div');
   block.className = 'progress-block' + (i < filled ? ' filled' : '');
